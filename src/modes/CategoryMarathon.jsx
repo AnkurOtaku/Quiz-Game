@@ -18,7 +18,7 @@ const getQuestionCount = async (category, setError, difficulty) => {
 
     let number_of_questions;
     switch (difficulty) {
-      case 0:
+      case 4:
         number_of_questions = data.category_question_count.total_question_count;
         break;
       case 1:
@@ -68,7 +68,7 @@ function CategoryMarathon() {
   useEffect(() => {
     let count;
     category && (count = getQuestionCount(category, setError, difficulty));
-    count && getQuestions(category, count, setError, setQuiz, token);
+    category && getQuestions(category, count, setError, setQuiz, token);
   }, [difficulty]);
 
   return (

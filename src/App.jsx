@@ -25,7 +25,7 @@ const getToken = async (setToken, setError) => {
 };
 
 function App() {
-  const { setError, error, setMode, setToken, mode } = useContext(AppContext);
+  const { setError, error, setMode, setCategory, setDifficulty, setToken, mode } = useContext(AppContext);
   const modes = [
     "Category Marathon",
     "Time Attack",
@@ -39,12 +39,17 @@ function App() {
   return (
     <>
       <div className="w-full border-b-2 bg-gradient-to-r from-indigo-800 to-indigo-500 py-3 flex justify-center">
-        <a
+        <button
           className="rounded-md p-2 text-white text-2xl transition ease-in-out bg-gradient-to-br hover:from-indigo-400"
-          href="/"
+          onClick={() => {
+            setMode(false);
+            setCategory(false);
+            setDifficulty(false);
+            setError(false);
+          }}
         >
           Trivia Quiz Game
-        </a>
+        </button>
       </div>
 
       {!mode && (
@@ -78,7 +83,7 @@ function App() {
       ) : mode === "Random Quiz" ? (
         <RandomQuiz />
       ) : mode === "Favourates" ? (
-        <Favourates/>
+        <Favourates />
       ) : (
         ""
       )}

@@ -13,7 +13,7 @@ function Category() {
             <button
               key={index}
               onClick={() => {
-                setDifficulty(index);
+                setDifficulty(index==0?4:index);
               }}
               className={`w-full text-center py-[10%] text-xl rounded-md px-2 ${
                 index === difficulty
