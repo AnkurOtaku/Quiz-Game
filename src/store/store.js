@@ -10,6 +10,7 @@ export const AppProvider = (props) => {
   const [category, setCategory] = useState(false);
   const [difficulty, setDifficulty] = useState(false);
   const [categories, setCategories] = useState(false);
+  const [favourates, setFavourates] = useState([]);
 
   return (
     <AppContext.Provider
@@ -26,6 +27,8 @@ export const AppProvider = (props) => {
         setDifficulty: setDifficulty,
         categories: categories,
         setCategories: setCategories,
+        favourates: favourates,
+        setFavourates: setFavourates,
       }}
     >
       {props.children}

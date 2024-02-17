@@ -4,32 +4,28 @@ import Difficulty from "../components/Difficulty";
 import { AppContext } from "../store/store";
 import Quiz from "../components/Quiz";
 
-const getQuestionCount = async (category, setError, difficulty) => {
+const getQuestionCount = async (category, difficulty, setQuestionCount) => {
   try {
     const response = await fetch(
       `https://opentdb.com/api_count.php?category=${category.id}`
     );
     const data = await response.json();
-
-    if (data.response_code !== 0) {
-      setError(data.response_code);
-      return null;
-    }
+    setQuestionCount(data.category_question_count);
 
     let number_of_questions;
     switch (difficulty) {
-      case 4:
+      case "mixed":
         number_of_questions = data.category_question_count.total_question_count;
         break;
-      case 1:
+      case "easy":
         number_of_questions =
           data.category_question_count.total_easy_question_count;
         break;
-      case 2:
+      case "medium":
         number_of_questions =
           data.category_question_count.total_medium_question_count;
         break;
-      case 3:
+      case "hard":
         number_of_questions =
           data.category_question_count.total_hard_question_count;
         break;
@@ -43,10 +39,19 @@ const getQuestionCount = async (category, setError, difficulty) => {
   }
 };
 
-const getQuestions = async (category, count, setError, setQuiz, token) => {
+const getQuiz = async (
+  category,
+  count,
+  difficulty,
+  setError,
+  setQuiz,
+  token
+) => {
   try {
     const response = await fetch(
-      `https://opentdb.com/api.php?amount=${count}&category=${category.id}&token=${token}`
+      `https://opentdb.com/api.php?amount=${count}&category=${category.id}${
+        difficulty !== "mixed" ? `&difficulty=${difficulty}` : ""
+      }&token=${token}`
     );
     const data = await response.json();
 
@@ -61,22 +66,37 @@ const getQuestions = async (category, count, setError, setQuiz, token) => {
 };
 
 function CategoryMarathon() {
-  const { category, setError, difficulty, token } =
-    useContext(AppContext);
+  const { category, setError, difficulty, token } = useContext(AppContext);
   const [quiz, setQuiz] = useState(false);
+  const [questionCount, setQuestionCount] = useState(0);
 
   useEffect(() => {
-    let count;
-    category && (count = getQuestionCount(category, setError, difficulty));
-    category && getQuestions(category, count, setError, setQuiz, token);
-  }, [difficulty]);
+    const fetchData = async () => {
+      if (category) {
+        try {
+          const count = await getQuestionCount(
+            category,
+            difficulty,
+            setQuestionCount
+          );
+          if (count && category && difficulty) {
+            getQuiz(category, count, difficulty, setError, setQuiz, token);
+          }
+        } catch (error) {
+          console.error(error);
+        }
+      }
+    };
+
+    fetchData();
+  }, [difficulty, category]);
 
   return (
     <>
       {!category ? (
         <Category />
       ) : !difficulty ? (
-        <Difficulty />
+        <Difficulty questionCount={questionCount} />
       ) : quiz ? (
         <Quiz quiz={quiz} />
       ) : (

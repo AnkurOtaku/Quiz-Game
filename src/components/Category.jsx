@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import { AppContext } from "../store/store";
 
 const getCategories = async(setCategories, setError)=>{
@@ -15,11 +15,10 @@ const getCategories = async(setCategories, setError)=>{
 };
 
 function Category() {
-  const { category, setCategory, setError } = useContext(AppContext);
-  const [categories, setCategories] = useState(false);
+  const { category, setCategory, categories, setCategories, setError } = useContext(AppContext);
 
   useEffect(() => {
-    getCategories(setCategories, setError);
+    !categories && getCategories(setCategories, setError);
   }, []);
 
   return (
