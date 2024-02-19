@@ -29,7 +29,7 @@ function Results({ score, quizLength }) {
 
   return (
     <>
-      <div className="max-w-3xl px-4 text-center font-bold mx-auto h-[75vh] gap-4 grid justify-items-center content-center skew-y-[170deg] overflow-hidden">
+      <div className="px-4 text-center font-bold h-[75vh] gap-4 grid justify-items-center content-center skew-y-[170deg] overflow-hidden">
         <div className="text-3xl">Congratulations, You completed a quiz.</div>
         <div className="text-3xl md:text-6xl">Score : {percentage}%</div>
         <button

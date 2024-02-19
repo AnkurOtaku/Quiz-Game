@@ -51,7 +51,7 @@ const getQuiz = async (
     const response = await fetch(
       `https://opentdb.com/api.php?amount=${count}&category=${category.id}${
         difficulty !== "mixed" ? `&difficulty=${difficulty}` : ""
-      }&token=${token}`
+      }${token ? `&token=${token}` : ""}`
     );
     const data = await response.json();
 

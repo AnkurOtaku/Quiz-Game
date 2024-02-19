@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import { AppContext } from "../store/store";
 
 function Difficulty({ questionCount }) {
-  const { setDifficulty, difficulty } = useContext(AppContext);
-  const level = ["Mixed", "easy", "medium", "hard"];
+  const { setDifficulty, } = useContext(AppContext);
+  const level = ["mixed", "easy", "medium", "hard"];
   const count = [
     questionCount.total_question_count,
     questionCount.total_easy_question_count,
@@ -14,7 +14,7 @@ function Difficulty({ questionCount }) {
   return (
     <>
       <div className="text-center text-lg my-2">Select Difficulty</div>
-      <div className="max-w-screen-lg text-white my-4 mx-auto grid grid-cols-2 gap-4 justify-items-center px-6">
+      <div className="text-white my-4 grid grid-cols-2 gap-4 justify-items-center px-6">
         {level.map((part, index) => {
           return (
             <button
@@ -22,15 +22,11 @@ function Difficulty({ questionCount }) {
               onClick={() => {
                 setDifficulty(part);
               }}
-              className={`w-full grid grid-cols-3 text-center py-[10%] text-xl rounded-md capitalize px-2 ${
-                index === difficulty
-                  ? "bg-indigo-900"
-                  : `bg-gradient-to-br from-indigo-800 from-40% via-indigo-400 via-80%`
-              }`}
+              className="w-full grid grid-cols-3 text-center py-[10%] text-xl rounded-md capitalize px-2 transition-transform bg-gradient-to-br from-indigo-800 from-40% via-indigo-400 via-80% hover:bg-indigo-900 hover:scale-105"
             >
               <div className="col-span-2">{part}</div>
               <div className="bg-indigo-900 rounded-full h-full px-2">
-                {count[index]}
+                {count[index]>50?50:count[index]}
               </div>
             </button>
           );

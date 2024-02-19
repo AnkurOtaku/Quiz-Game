@@ -13,7 +13,7 @@ function Error() {
   return (
     <div className='mx-4 p-4 border rounded-lg mt-8 bg-black'>
       <div className='text-center text-xl text-red-500'>{(errorCode.find(codes=>error===codes.code)).description}</div>
-      <div className='text-center text-white'>Please Try Again After Some Time</div>
+      <div className='text-center text-pretty text-white'>Please Try Refreshing Web Page OR Try Again After Some Time</div>
     </div>
   )
 }

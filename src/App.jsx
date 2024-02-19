@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import CategoryMarathon from "./modes/CategoryMarathon";
 import TimeAttack from "./modes/TimeAttack";
 import Favourates from "./modes/Favourates";
@@ -25,16 +25,25 @@ const getToken = async (setToken, setError) => {
 };
 
 function App() {
-  const { setError, error, setMode, setCategory, setDifficulty, setToken, mode } = useContext(AppContext);
+  const {
+    token,
+    setError,
+    error,
+    setMode,
+    setCategory,
+    setDifficulty,
+    setToken,
+    mode,
+  } = useContext(AppContext);
   const modes = [
     "Category Marathon",
     "Time Attack",
     "Random Quiz",
     "Favourates",
   ];
-  useEffect(() => {
-    getToken(setToken, setError);
-  }, []);
+  function handleToken() {
+    token ? setToken(false): getToken(setToken, setError);
+  }
 
   return (
     <>
@@ -52,41 +61,51 @@ function App() {
         </button>
       </div>
 
-      {!mode && (
-        <div className="max-w-screen-lg text-white my-4 mx-auto grid grid-cols-2 gap-4 justify-items-center px-6">
-          {modes.map((modess) => {
-            return (
-              <button
-                key={modess}
-                onClick={() => {
-                  setMode(modess);
-                }}
-                className={`w-full text-center py-[10%] text-xl rounded-md px-2 ${
-                  modess === mode
-                    ? "bg-indigo-900"
-                    : `bg-gradient-to-br from-indigo-800 from-40% via-indigo-400 via-80%`
-                }`}
-              >
-                {modess}
-              </button>
-            );
-          })}
-        </div>
-      )}
+      <div className="max-w-screen-lg mx-auto">
+        {!mode && (
+          <>
+            <div className="text-white my-4 grid grid-cols-2 gap-4 justify-items-center px-6">
+              {modes.map((modess) => {
+                return (
+                  <button
+                    key={modess}
+                    onClick={() => {
+                      setMode(modess);
+                    }}
+                    className="w-full text-center py-[10%] text-xl rounded-md px-2 transition-transform bg-gradient-to-br from-indigo-800 from-40% via-indigo-400 via-80% hover:bg-indigo-900 hover:scale-105"
+                  >
+                    {modess}
+                  </button>
+                );
+              })}
+            </div>
+            <button
+              onClick={() => {
+                handleToken();
+              }}
+              className={`w-full mx-auto mt-8 border p-2 text-white rounded-lg ${
+                token ? "bg-gradient-to-r from-indigo-800 to-indigo-500" : "bg-black"
+              }`}
+            >
+              Don't Repeat Questions : {token ? "yes" : "no"}
+            </button>
+          </>
+        )}
 
-      {error ? (
-        <Error />
-      ) : mode === "Category Marathon" ? (
-        <CategoryMarathon />
-      ) : mode === "Time Attack" ? (
-        <TimeAttack />
-      ) : mode === "Random Quiz" ? (
-        <RandomQuiz />
-      ) : mode === "Favourates" ? (
-        <Favourates />
-      ) : (
-        ""
-      )}
+        {error ? (
+          <Error />
+        ) : mode === "Category Marathon" ? (
+          <CategoryMarathon />
+        ) : mode === "Time Attack" ? (
+          <TimeAttack />
+        ) : mode === "Random Quiz" ? (
+          <RandomQuiz />
+        ) : mode === "Favourates" ? (
+          <Favourates />
+        ) : (
+          ""
+        )}
+      </div>
     </>
   );
 }
