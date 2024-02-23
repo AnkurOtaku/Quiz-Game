@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import Results from "./Results";
 import { AppContext } from "../store/store";
 
-function Quiz({ quiz }) {
+function Quiz({ quiz, questionCount=0 }) {
   const [index, setIndex] = useState(0);
   const [choose, setChoose] = useState(false);
   const [options, setOptions] = useState(0);
@@ -61,10 +61,10 @@ function Quiz({ quiz }) {
 
   return (
     <>
-      <div className="px-4 border rounded-xl mt-4">
+      <div className="px-4 border rounded-xl">
         <div className="w-full flex justify-between items-center -translate-y-4 bg-white font-bold">
           <div className="border rounded-full px-4">
-            {index + 1}/{quiz.length}
+            {index + 1}/{questionCount ? questionCount : quiz.length}
           </div>
           <button
             className="border rounded-full p-2"
@@ -81,11 +81,11 @@ function Quiz({ quiz }) {
               fill="#000000"
               stroke="#000000"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></g>
               <g id="SVGRepo_iconCarrier">
                 <title>heart-like</title> <desc>Created with Sketch Beta.</desc>
@@ -93,9 +93,9 @@ function Quiz({ quiz }) {
                 <g
                   id="Page-1"
                   stroke="none"
-                  stroke-width="1"
+                  strokeWidth="1"
                   fill="none"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                 >
                   <g
                     id="Icon-Set-Filled"
@@ -149,6 +149,14 @@ function Quiz({ quiz }) {
             })}
         </div>
       </div>
+        <button
+          className="mt-8 mb-2 w-full p-3 font-semibold font-mono text-lg rounded-lg bg-gradient-to-r from-white via-red-600 to-white"
+          onClick={() => {
+            setCompleted(true);
+          }}
+        >
+          End Quiz
+        </button>
     </>
   );
 }

@@ -21,8 +21,8 @@ function Results({ score, quizLength }) {
         particleCount: 200,
         spread: 180,
       });
-    } else {
-      Confetti({});
+    } else if (percentage!==0) {
+      Confetti();
     }
   }
   celebrate();

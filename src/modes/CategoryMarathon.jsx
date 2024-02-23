@@ -3,13 +3,25 @@ import Category from "../components/Category";
 import Difficulty from "../components/Difficulty";
 import { AppContext } from "../store/store";
 import Quiz from "../components/Quiz";
+import { useNavigate } from "react-router-dom";
 
-const getQuestionCount = async (category, difficulty, setQuestionCount) => {
+const getQuestionCount = async (
+  category,
+  difficulty,
+  setQuestionCount,
+  setError,
+  navigate
+) => {
   try {
     const response = await fetch(
       `https://opentdb.com/api_count.php?category=${category.id}`
     );
     const data = await response.json();
+    if (data.response_code !== 0) {
+      setError(data.response_code);
+      navigate("/error");
+      return null;
+    }
     setQuestionCount(data.category_question_count);
 
     let number_of_questions;
@@ -45,7 +57,8 @@ const getQuiz = async (
   difficulty,
   setError,
   setQuiz,
-  token
+  token,
+  navigate
 ) => {
   try {
     const response = await fetch(
@@ -57,6 +70,7 @@ const getQuiz = async (
 
     if (data.response_code !== 0) {
       setError(data.response_code);
+      navigate("/error");
       return null;
     }
     setQuiz(data.results);
@@ -69,6 +83,7 @@ function CategoryMarathon() {
   const { category, setError, difficulty, token } = useContext(AppContext);
   const [quiz, setQuiz] = useState(false);
   const [questionCount, setQuestionCount] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -77,10 +92,20 @@ function CategoryMarathon() {
           const count = await getQuestionCount(
             category,
             difficulty,
-            setQuestionCount
+            setQuestionCount,
+            setError,
+            navigate
           );
           if (count && category && difficulty) {
-            getQuiz(category, count, difficulty, setError, setQuiz, token);
+            getQuiz(
+              category,
+              count,
+              difficulty,
+              setError,
+              setQuiz,
+              token,
+              navigate
+            );
           }
         } catch (error) {
           console.error(error);

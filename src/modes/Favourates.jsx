@@ -7,7 +7,7 @@ function Favourates() {
 
   if (favourates.length === 0) {
     return (
-      <div className="w-full mt-4 px-2">
+      <div className="w-full">
         <div className="text-center font-bold">No questions in favourates.</div>
         <div className="text-center text-pretty">Play other game modes and add question to favourates to make a quiz from
         your favourate questions only.</div>

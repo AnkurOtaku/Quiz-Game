@@ -1,7 +1,8 @@
-import React, { useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import { AppContext } from "../store/store";
+import { useNavigate } from "react-router-dom";
 
-const getCategories = async (setCategories, setError) => {
+const getCategories = async (setCategories, setError, navigate) => {
   try {
     const response = await fetch("https://opentdb.com/api_category.php");
     const data = await response.json();
@@ -10,21 +11,23 @@ const getCategories = async (setCategories, setError) => {
   } catch (error) {
     console.error(error);
     setError(error);
+    navigate("/error");
   }
 };
 
 function Category() {
-  const { category, setCategory, categories, setCategories, setError } =
+  const { setCategory, categories, setCategories, setError } =
     useContext(AppContext);
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    !categories && getCategories(setCategories, setError);
-  }, []);
+  if(!categories){
+    getCategories(setCategories, setError, navigate);
+  }
 
   return (
     <>
-      <div className="text-center text-lg my-2">Select Categories</div>
-      <div className="text-white my-4 grid grid-cols-2 md:grid-cols-3 gap-4 justify-items-center px-6">
+      <div className="text-center text-lg">Select Categories</div>
+      <div className="text-white my-4 grid grid-cols-2 md:grid-cols-3 gap-4 justify-items-center overflow-y-scroll">
         {categories &&
           categories.map((cat, index) => {
             return (
