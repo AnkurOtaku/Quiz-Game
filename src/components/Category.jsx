@@ -27,7 +27,7 @@ function Category() {
   return (
     <>
       <div className="text-center text-lg">Select Categories</div>
-      <div className="text-white my-4 grid grid-cols-2 md:grid-cols-3 gap-4 justify-items-center overflow-y-scroll">
+      <div className="text-white my-4 grid grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
         {categories &&
           categories.map((cat, index) => {
             return (

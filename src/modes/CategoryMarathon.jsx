@@ -8,20 +8,14 @@ import { useNavigate } from "react-router-dom";
 const getQuestionCount = async (
   category,
   difficulty,
-  setQuestionCount,
-  setError,
-  navigate
+  setQuestionCount
 ) => {
   try {
     const response = await fetch(
       `https://opentdb.com/api_count.php?category=${category.id}`
     );
     const data = await response.json();
-    if (data.response_code !== 0) {
-      setError(data.response_code);
-      navigate("/error");
-      return null;
-    }
+    
     setQuestionCount(data.category_question_count);
 
     let number_of_questions;
@@ -92,9 +86,7 @@ function CategoryMarathon() {
           const count = await getQuestionCount(
             category,
             difficulty,
-            setQuestionCount,
-            setError,
-            navigate
+            setQuestionCount
           );
           if (count && category && difficulty) {
             getQuiz(
