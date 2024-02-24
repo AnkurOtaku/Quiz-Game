@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import Results from "./Results";
 import { AppContext } from "../store/store";
+import stopwatch from './stopwatch.png';
 
 function decodeHTMLEntities(str) {
   const parser = new DOMParser();
@@ -54,9 +55,11 @@ function Quiz({ quiz, questionCount = 0, time = false }) {
     } else {
       setOptions(["True", "False"]);
     }
-    setTimeLeft(8);
-    const cleanupTimer = handleTime();
-    return cleanupTimer;
+    if (time) {
+      setTimeLeft(8);
+      const cleanupTimer = handleTime();
+      return cleanupTimer;
+    }
   }, [index]);
 
   function updateScore(option) {
@@ -83,11 +86,20 @@ function Quiz({ quiz, questionCount = 0, time = false }) {
   return (
     <>
       <div className="px-4 border rounded-xl">
-        <div className="w-full flex justify-between items-center -translate-y-4 bg-white font-bold">
+        <div className="w-full flex justify-between items-center -translate-y-6 bg-white font-bold">
           <div className="border rounded-full px-4">
             {index + 1}/{questionCount ? questionCount : quiz.length}
           </div>
-          {time && <div className="border rounded-full p-2">{timeLeft}</div>}
+          {time && (
+            <div
+              className={`h-[50px] w-[50px] -translate-x-3 rounded-full bg-cover bg-center bg-no-repeat p-2 relative`}
+              style={{ backgroundImage: `url(${stopwatch})` }}>
+              <div className={`absolute inset-x-6 inset-y-7 flex justify-center items-center font-bold ${timeLeft<=3?'text-red-600':''}`}>
+                {timeLeft}
+              </div>
+            </div>
+          )}
+
           <button
             className="border rounded-full p-2"
             onClick={() => {
@@ -95,8 +107,8 @@ function Quiz({ quiz, questionCount = 0, time = false }) {
             }}
           >
             <svg
-              width="30px"
-              height="30px"
+              width="25px"
+              height="25px"
               viewBox="0 -1 32 32"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -171,14 +183,16 @@ function Quiz({ quiz, questionCount = 0, time = false }) {
             })}
         </div>
       </div>
-      {!time && <button
-        className="mt-8 mb-2 w-full p-3 font-semibold font-mono text-lg rounded-lg bg-gradient-to-r from-white via-red-600 to-white"
-        onClick={() => {
-          setCompleted(true);
-        }}
-      >
-        End Quiz
-      </button>}
+      {!time && (
+        <button
+          className="mt-8 mb-2 w-full p-3 font-semibold font-mono text-lg rounded-lg bg-gradient-to-r from-white via-red-600 to-white"
+          onClick={() => {
+            setCompleted(true);
+          }}
+        >
+          End Quiz
+        </button>
+      )}
     </>
   );
 }
