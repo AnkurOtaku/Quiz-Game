@@ -2,13 +2,23 @@ import React, { useEffect, useState, useContext } from "react";
 import Results from "./Results";
 import { AppContext } from "../store/store";
 
-function Quiz({ quiz, questionCount=0 }) {
+function decodeHTMLEntities(str) {
+  const parser = new DOMParser();
+  const decodedString = parser.parseFromString(
+    `<!doctype html><body>${str}`,
+    "text/html"
+  ).body.textContent;
+  return decodedString;
+}
+
+function Quiz({ quiz, questionCount = 0, time = false }) {
   const [index, setIndex] = useState(0);
   const [choose, setChoose] = useState(false);
   const [options, setOptions] = useState(0);
   const [completed, setCompleted] = useState(false);
   const { favourates, setFavourates } = useContext(AppContext);
   const [score, setScore] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(8);
 
   const nextQuestion = () => {
     if (index + 1 < quiz.length) {
@@ -16,16 +26,23 @@ function Quiz({ quiz, questionCount=0 }) {
       setChoose(false);
     } else {
       setCompleted(true);
+      clearInterval();
     }
   };
 
-  function decodeHTMLEntities(str) {
-    const parser = new DOMParser();
-    const decodedString = parser.parseFromString(
-      `<!doctype html><body>${str}`,
-      "text/html"
-    ).body.textContent;
-    return decodedString;
+  function handleTime() {
+    const timer = setInterval(() => {
+      setTimeLeft((prevTimeLeft) => {
+        if (prevTimeLeft === 0) {
+          nextQuestion();
+          clearInterval(timer);
+          return 0;
+        }
+        return prevTimeLeft - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
   }
 
   useEffect(() => {
@@ -37,6 +54,9 @@ function Quiz({ quiz, questionCount=0 }) {
     } else {
       setOptions(["True", "False"]);
     }
+    setTimeLeft(8);
+    const cleanupTimer = handleTime();
+    return cleanupTimer;
   }, [index]);
 
   function updateScore(option) {
@@ -56,6 +76,7 @@ function Quiz({ quiz, questionCount=0 }) {
   }
 
   if (completed) {
+    clearInterval();
     return <Results score={score} quizLength={quiz.length} />;
   }
 
@@ -66,6 +87,7 @@ function Quiz({ quiz, questionCount=0 }) {
           <div className="border rounded-full px-4">
             {index + 1}/{questionCount ? questionCount : quiz.length}
           </div>
+          {time && <div className="border rounded-full p-2">{timeLeft}</div>}
           <button
             className="border rounded-full p-2"
             onClick={() => {
@@ -149,14 +171,14 @@ function Quiz({ quiz, questionCount=0 }) {
             })}
         </div>
       </div>
-        <button
-          className="mt-8 mb-2 w-full p-3 font-semibold font-mono text-lg rounded-lg bg-gradient-to-r from-white via-red-600 to-white"
-          onClick={() => {
-            setCompleted(true);
-          }}
-        >
-          End Quiz
-        </button>
+      {!time && <button
+        className="mt-8 mb-2 w-full p-3 font-semibold font-mono text-lg rounded-lg bg-gradient-to-r from-white via-red-600 to-white"
+        onClick={() => {
+          setCompleted(true);
+        }}
+      >
+        End Quiz
+      </button>}
     </>
   );
 }

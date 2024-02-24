@@ -14,6 +14,7 @@ import TimeAttack from "./modes/TimeAttack";
 import Favourates from "./modes/Favourates";
 import Navbar from "./components/Navbar";
 import Error from "./components/Error.jsx";
+import RouteError from "./components/RouteError.jsx";
 import { AppProvider } from "./store/store.js";
 
 const router = createBrowserRouter(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
         <Route path="random_quiz" element={<RandomQuiz />} />
         <Route path="favourates" element={<Favourates />} />
         <Route path="error" element={<Error/>}/>
+        <Route path="*" element={<RouteError/>}/>
     </Route>
   )
 );

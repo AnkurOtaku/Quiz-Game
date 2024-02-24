@@ -42,7 +42,6 @@ function RandomQuiz() {
   const [range, setRange] = useState(15);
   const [startQuiz, setStartQuiz] = useState(false);
   const navigate = useNavigate();
-  console.log(startQuiz);
 
   if (!categories) {
     getCategories(setCategories, setError, navigate);
@@ -56,7 +55,6 @@ function RandomQuiz() {
       if (currentIteration < iterations) {
         const categoryID =
           categories[Math.floor(Math.random() * categories.length)].id;
-        console.log(categoryID, categories);
 
         getQuiz(5, categoryID, setError, setQuiz, token, navigate)
           .then(() => {
