@@ -101,7 +101,7 @@ function RandomQuiz() {
       <div className="mt-4 w-full grid justify-items-center">
         <button
           onClick={handleStartQuiz}
-          disabled={startQuiz}
+          disabled={categories && startQuiz}
           className="px-3 py-2 text-white rounded-md bg-indigo-800 hover:bg-indigo-400"
         >
           {startQuiz ? "Quiz in progress..." : "Start Quiz"}
