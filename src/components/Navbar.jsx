@@ -4,11 +4,10 @@ import { NavLink, Outlet } from "react-router-dom";
 import { AppContext } from "../store/store";
 
 function Navbar() {
-  const { setMode, setCategory, setDifficulty, setError } =
+  const { setCategory, setDifficulty, setError } =
     useContext(AppContext);
 
   function handleActive() {
-    setMode(false);
     setCategory(false);
     setDifficulty(false);
     setError(false);

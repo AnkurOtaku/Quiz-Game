@@ -16,6 +16,7 @@ import Navbar from "./components/Navbar";
 import Error from "./components/Error.jsx";
 import RouteError from "./components/RouteError.jsx";
 import { AppProvider } from "./store/store.js";
+import TestLuck from "./modes/TestLuck.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
         <Route path="time_attack" element={<TimeAttack />} />
         <Route path="random_quiz" element={<RandomQuiz />} />
         <Route path="favourates" element={<Favourates />} />
+        <Route path="test_luck" element={<TestLuck/>}/>
         <Route path="error" element={<Error/>}/>
         <Route path="*" element={<RouteError/>}/>
     </Route>

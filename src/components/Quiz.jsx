@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useContext } from "react";
 import Results from "./Results";
 import { AppContext } from "../store/store";
-import stopwatch from '../media/stopwatch.png';
-import correct_answer from '../media/correct-answer.mp3';
-import wrong_answer from '../media/wrong-answer.mp3';
+import stopwatch from "../media/stopwatch.png";
+import correct_answer from "../media/correct-answer.mp3";
+import wrong_answer from "../media/wrong-answer.mp3";
 
 function decodeHTMLEntities(str) {
   const parser = new DOMParser();
@@ -21,7 +21,13 @@ function Quiz({ quiz, questionCount = 0, time = false }) {
   const [completed, setCompleted] = useState(false);
   const { favourates, setFavourates } = useContext(AppContext);
   const [score, setScore] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(8);
+  const [timeLeft, setTimeLeft] = useState(7);
+  const gradient = [
+    "bg-gradient-to-br",
+    "bg-gradient-to-bl",
+    "bg-gradient-to-tr",
+    "bg-gradient-to-tl",
+  ];
 
   const nextQuestion = () => {
     if (index + 1 < quiz.length) {
@@ -49,7 +55,7 @@ function Quiz({ quiz, questionCount = 0, time = false }) {
   }
 
   useEffect(() => {
-    new Audio()
+    new Audio();
     if (quiz[index].type === "multiple") {
       const random = Math.floor(Math.random() * 4) + 0;
       const shuffled_options = [...quiz[index].incorrect_answers];
@@ -59,7 +65,7 @@ function Quiz({ quiz, questionCount = 0, time = false }) {
       setOptions(["True", "False"]);
     }
     if (time) {
-      setTimeLeft(8);
+      setTimeLeft(7);
       const cleanupTimer = handleTime();
       return cleanupTimer;
     }
@@ -69,8 +75,7 @@ function Quiz({ quiz, questionCount = 0, time = false }) {
     if (option === quiz[index].correct_answer) {
       setScore(score + 1);
       new Audio(correct_answer).play();
-    }
-    else {
+    } else {
       new Audio(wrong_answer).play();
     }
   }
@@ -100,8 +105,13 @@ function Quiz({ quiz, questionCount = 0, time = false }) {
           {time && (
             <div
               className={`h-[50px] w-[50px] -translate-x-3 rounded-full bg-cover bg-center bg-no-repeat p-2 relative`}
-              style={{ backgroundImage: `url(${stopwatch})` }}>
-              <div className={`absolute inset-x-6 inset-y-7 flex justify-center items-center font-bold ${timeLeft<=3?'text-red-600':''}`}>
+              style={{ backgroundImage: `url(${stopwatch})` }}
+            >
+              <div
+                className={`absolute inset-x-6 inset-y-7 flex justify-center items-center font-bold ${
+                  timeLeft <= 3 ? "text-red-600" : ""
+                }`}
+              >
                 {timeLeft}
               </div>
             </div>
@@ -177,7 +187,7 @@ function Quiz({ quiz, questionCount = 0, time = false }) {
                   } ${
                     !choose ||
                     (option !== quiz[index].correct_answer && choose !== option)
-                      ? `bg-gradient-to-br from-indigo-800 from-40% via-indigo-400 via-80%`
+                      ? `${gradient[i]} from-indigo-800 from-40% via-indigo-400 via-80%`
                       : choose === quiz[index].correct_answer ||
                         option === quiz[index].correct_answer
                       ? "bg-lime-600"
