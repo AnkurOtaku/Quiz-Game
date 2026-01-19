@@ -182,7 +182,7 @@ function Quiz({ quiz, questionCount = 0, time = false }) {
                     }, 2000);
                   }}
                   disabled={choose}
-                  className={`w-full text-center py-[10%] rounded-md px-2 text-xl transition-transform hover:scale-105 ${
+                  className={`w-full text-center py-[10%] rounded-md px-2 text-xl text-wrap break-words transition-transform hover:scale-105 ${
                     choose && "cursor-not-allowed"
                   } ${
                     !choose ||

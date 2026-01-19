@@ -1,0 +1,135 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "Which data structure follows the First In First Out (FIFO) principle?",
+      "correct_answer": "Queue",
+      "incorrect_answers": [
+        "Stack",
+        "Tree",
+        "Graph"
+      ],
+      "explanation": "A queue follows the FIFO principle where the element inserted first is removed first. Stack follows LIFO, while trees and graphs do not enforce any such order."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the time complexity of binary search in a sorted array?",
+      "correct_answer": "O(log n)",
+      "incorrect_answers": [
+        "O(n)",
+        "O(n log n)",
+        "O(1)"
+      ],
+      "explanation": "Binary search halves the search space at every step, resulting in a logarithmic time complexity O(log n)."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "Which normal form eliminates transitive dependency in a database table?",
+      "correct_answer": "Third Normal Form",
+      "incorrect_answers": [
+        "First Normal Form",
+        "Second Normal Form",
+        "Boyce-Codd Normal Form"
+      ],
+      "explanation": "Third Normal Form (3NF) removes transitive dependencies, ensuring that non-prime attributes depend only on the primary key."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "Which of the following is not an operating system?",
+      "correct_answer": "Oracle",
+      "incorrect_answers": [
+        "Linux",
+        "Windows",
+        "Unix"
+      ],
+      "explanation": "Oracle is a database management system, not an operating system. Linux, Windows, and Unix are operating systems."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "In computer networks, which device operates at the Network Layer of the OSI model?",
+      "correct_answer": "Router",
+      "incorrect_answers": [
+        "Hub",
+        "Switch",
+        "Repeater"
+      ],
+      "explanation": "Routers work at the Network Layer (Layer 3) and are responsible for routing packets between different networks."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What will be the output of the expression: 5 + 10 * 2?",
+      "correct_answer": "25",
+      "incorrect_answers": [
+        "30",
+        "20",
+        "15"
+      ],
+      "explanation": "According to operator precedence, multiplication is performed before addition. So 10 * 2 = 20, then 5 + 20 = 25."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "Which traversal technique is used to get postfix expression from an expression tree?",
+      "correct_answer": "Postorder traversal",
+      "incorrect_answers": [
+        "Preorder traversal",
+        "Inorder traversal",
+        "Level order traversal"
+      ],
+      "explanation": "Postorder traversal processes the left subtree, right subtree, and then the root, which corresponds to postfix notation."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "Which scheduling algorithm may cause starvation?",
+      "correct_answer": "Priority Scheduling",
+      "incorrect_answers": [
+        "Round Robin",
+        "First Come First Serve",
+        "Shortest Job First (non-preemptive)"
+      ],
+      "explanation": "In priority scheduling, low-priority processes may starve if higher-priority processes keep arriving."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the degree of a node in a graph?",
+      "correct_answer": "Number of edges connected to the node",
+      "incorrect_answers": [
+        "Number of vertices in the graph",
+        "Number of cycles in the graph",
+        "Number of paths from the node"
+      ],
+      "explanation": "The degree of a node is defined as the number of edges incident to that node."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "Which protocol is used for secure communication over the Internet?",
+      "correct_answer": "HTTPS",
+      "incorrect_answers": [
+        "HTTP",
+        "FTP",
+        "SMTP"
+      ],
+      "explanation": "HTTPS uses SSL/TLS encryption to provide secure communication over the Internet, unlike HTTP which is unencrypted."
+    }
+  ]
+}

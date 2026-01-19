@@ -1,11 +1,14 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { AppContext } from "./store/store";
-import { NavLink } from "react-router-dom";
+import { NavLink  } from "react-router-dom";
+
 import category_marathon from "./media/category_marathon.jpg";
 import time_attack from "./media/time_attack.jpg";
 import random_quiz from "./media/random_quiz.jpg";
 import favourates from "./media/favourates.jpg";
 import luck_test from "./media/luck_test.jpg";
+import pyq_image from "./media/pyq_image.png"; //download this from net
+
 
 const getToken = async (setToken, setError) => {
   try {
@@ -28,14 +31,11 @@ const getToken = async (setToken, setError) => {
 function App() {
   const { token, setError, setToken } = useContext(AppContext);
   const modes = [
-    {
-      name: "Category Marathon",
-      route: "category_marathon",
-      image: category_marathon,
-    },
+    { name: "Category Marathon", route: "category_marathon", image: category_marathon },
     { name: "Time Attack", route: "time_attack", image: time_attack },
     { name: "Random Quiz", route: "random_quiz", image: random_quiz },
     { name: "Favourates", route: "favourates", image: favourates },
+    { name: "PYQ", route: "pyq", image: pyq_image },
   ];
 
   function handleToken() {
@@ -50,10 +50,12 @@ function App() {
             <NavLink
               key={obj.route}
               to={`${obj.route}`}
-              style={{backgroundImage: `url(${obj.image})`}}
+              style={{ backgroundImage: `url(${obj.image})` }}
               className={`w-full min-h-[150px] text-center text-xl rounded-md transition-transform bg-cover hover:scale-105`}
             >
-              <div className="h-full rounded-md py-[10%] bg-[rgba(0,0,0,0.6)] text-wrap break-words">{obj.name}</div>
+              <div className="h-full rounded-md py-[10%] bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(0,0,0,0.7)] text-wrap break-words">
+                {obj.name}
+              </div>
             </NavLink>
           );
         })}
@@ -62,10 +64,12 @@ function App() {
       <div className="text-white my-4 grid grid-cols-2 gap-4 justify-items-center">
         <NavLink
           to={`test_luck`}
-          style={{backgroundImage: `url(${luck_test})`}}
+          style={{ backgroundImage: `url(${luck_test})` }}
           className={`w-full min-h-[150px] text-center text-xl rounded-md transition-transform bg-cover hover:scale-105`}
         >
-          <div className="h-full rounded-md py-[10%] bg-[rgba(0,0,0,0.6)] text-wrap break-words">Luck Test</div>
+          <div className="h-full rounded-md py-[10%] bg-[rgba(0,0,0,0.5)] text-wrap break-words">
+            Luck Test
+          </div>
         </NavLink>
         <button
           onClick={() => {

@@ -11,6 +11,9 @@ import "./index.css";
 import CategoryMarathon from "./modes/CategoryMarathon";
 import RandomQuiz from "./modes/RandomQuiz";
 import TimeAttack from "./modes/TimeAttack";
+import PYQ from "./pages/PYQ";
+import PYQExam from "./pages/PYQExam";
+import PYQReview from "./pages/PYQReview";
 import Favourates from "./modes/Favourates";
 import Navbar from "./components/Navbar";
 import Error from "./components/Error.jsx";
@@ -26,6 +29,9 @@ const router = createBrowserRouter(
         <Route path="time_attack" element={<TimeAttack />} />
         <Route path="random_quiz" element={<RandomQuiz />} />
         <Route path="favourates" element={<Favourates />} />
+        <Route path="pyq" element={<PYQ />} />
+        <Route path="pyq/:year" element={<PYQExam />} />
+        <Route path="pyq/:year/review" element={<PYQReview />} />
         <Route path="test_luck" element={<TestLuck/>}/>
         <Route path="error" element={<Error/>}/>
         <Route path="*" element={<RouteError/>}/>

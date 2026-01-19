@@ -34,7 +34,7 @@ function Difficulty({ questionCount }) {
               style={{ backgroundImage: `url(${part.image})` }}
               className={`w-full min-h-[150px] text-center text-xl rounded-md capitalize transition-transform bg-cover hover:scale-105`}
             >
-              <div className="h-full grid grid-cols-3 content-center px-2 rounded-md py-[10%] bg-[rgba(0,0,0,0.6)] text-wrap break-words">
+              <div className="h-full grid grid-cols-3 content-center px-2 rounded-md py-[10%] bg-[rgba(0,0,0,0.4)] text-wrap break-words">
                 {questionCount && (
                   <>
                     <div className="col-span-2">{part.level}</div>
