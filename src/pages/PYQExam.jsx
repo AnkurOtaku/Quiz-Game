@@ -19,7 +19,7 @@ function PYQExam() {
 
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState({});
-  const [timeLeft, setTimeLeft] = useState(54);
+  const [timeLeft, setTimeLeft] = useState(5400);
 
   const answersRef = useRef({});
 
