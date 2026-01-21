@@ -5,131 +5,976 @@
       "type": "multiple",
       "difficulty": "normal",
       "category": "2025",
-      "question": "Which data structure follows the First In First Out (FIFO) principle?",
-      "correct_answer": "Queue",
+      "question": "If A is a 2\u00d72 matrix with |A| = 3, then |5A| equals:",
+      "correct_answer": "75",
       "incorrect_answers": [
-        "Stack",
-        "Tree",
-        "Graph"
+        "15",
+        "25",
+        "30"
       ],
-      "explanation": "A queue follows the FIFO principle where the element inserted first is removed first. Stack follows LIFO, while trees and graphs do not enforce any such order."
+      "explanation": "For an n\u00d7n matrix, |kA| = k^n|A|. Here n=2, so |5A| = 5^2\u00d73 = 75."
     },
     {
       "type": "multiple",
       "difficulty": "normal",
       "category": "2025",
-      "question": "What is the time complexity of binary search in a sorted array?",
-      "correct_answer": "O(log n)",
+      "question": "The rank of a matrix is defined as:",
+      "correct_answer": "Maximum number of linearly independent rows or columns",
       "incorrect_answers": [
-        "O(n)",
-        "O(n log n)",
-        "O(1)"
+        "Number of rows",
+        "Determinant of matrix",
+        "Trace of matrix"
       ],
-      "explanation": "Binary search halves the search space at every step, resulting in a logarithmic time complexity O(log n)."
+      "explanation": "Rank measures linear independence among rows or columns."
     },
     {
       "type": "multiple",
       "difficulty": "normal",
       "category": "2025",
-      "question": "Which normal form eliminates transitive dependency in a database table?",
-      "correct_answer": "Third Normal Form",
+      "question": "If f(x)=x\u00b2\u22124x+1, then f\u2032(2) is:",
+      "correct_answer": "0",
       "incorrect_answers": [
-        "First Normal Form",
-        "Second Normal Form",
-        "Boyce-Codd Normal Form"
+        "2",
+        "-2",
+        "4"
       ],
-      "explanation": "Third Normal Form (3NF) removes transitive dependencies, ensuring that non-prime attributes depend only on the primary key."
+      "explanation": "f\u2032(x)=2x\u22124, substituting x=2 gives 0."
     },
     {
       "type": "multiple",
       "difficulty": "normal",
       "category": "2025",
-      "question": "Which of the following is not an operating system?",
-      "correct_answer": "Oracle",
+      "question": "The general solution of dy/dx = x is:",
+      "correct_answer": "y = x\u00b2/2 + C",
       "incorrect_answers": [
-        "Linux",
-        "Windows",
-        "Unix"
+        "y = x + C",
+        "y = 2x + C",
+        "y = ln x + C"
       ],
-      "explanation": "Oracle is a database management system, not an operating system. Linux, Windows, and Unix are operating systems."
+      "explanation": "Integrating x gives x\u00b2/2 + C."
     },
     {
       "type": "multiple",
       "difficulty": "normal",
       "category": "2025",
-      "question": "In computer networks, which device operates at the Network Layer of the OSI model?",
-      "correct_answer": "Router",
+      "question": "If P(A)=0.5 and P(B)=0.4 and A,B are independent, P(A\u2229B) is:",
+      "correct_answer": "0.2",
       "incorrect_answers": [
-        "Hub",
-        "Switch",
-        "Repeater"
+        "0.9",
+        "0.1",
+        "0.45"
       ],
-      "explanation": "Routers work at the Network Layer (Layer 3) and are responsible for routing packets between different networks."
+      "explanation": "For independent events, P(A\u2229B)=P(A)P(B)."
     },
     {
       "type": "multiple",
       "difficulty": "normal",
       "category": "2025",
-      "question": "What will be the output of the expression: 5 + 10 * 2?",
-      "correct_answer": "25",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
       "incorrect_answers": [
-        "30",
-        "20",
-        "15"
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
       ],
-      "explanation": "According to operator precedence, multiplication is performed before addition. So 10 * 2 = 20, then 5 + 20 = 25."
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
     },
     {
       "type": "multiple",
       "difficulty": "normal",
       "category": "2025",
-      "question": "Which traversal technique is used to get postfix expression from an expression tree?",
-      "correct_answer": "Postorder traversal",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
       "incorrect_answers": [
-        "Preorder traversal",
-        "Inorder traversal",
-        "Level order traversal"
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
       ],
-      "explanation": "Postorder traversal processes the left subtree, right subtree, and then the root, which corresponds to postfix notation."
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
     },
     {
       "type": "multiple",
       "difficulty": "normal",
       "category": "2025",
-      "question": "Which scheduling algorithm may cause starvation?",
-      "correct_answer": "Priority Scheduling",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
       "incorrect_answers": [
-        "Round Robin",
-        "First Come First Serve",
-        "Shortest Job First (non-preemptive)"
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
       ],
-      "explanation": "In priority scheduling, low-priority processes may starve if higher-priority processes keep arriving."
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
     },
     {
       "type": "multiple",
       "difficulty": "normal",
       "category": "2025",
-      "question": "What is the degree of a node in a graph?",
-      "correct_answer": "Number of edges connected to the node",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
       "incorrect_answers": [
-        "Number of vertices in the graph",
-        "Number of cycles in the graph",
-        "Number of paths from the node"
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
       ],
-      "explanation": "The degree of a node is defined as the number of edges incident to that node."
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
     },
     {
       "type": "multiple",
       "difficulty": "normal",
       "category": "2025",
-      "question": "Which protocol is used for secure communication over the Internet?",
-      "correct_answer": "HTTPS",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
       "incorrect_answers": [
-        "HTTP",
-        "FTP",
-        "SMTP"
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
       ],
-      "explanation": "HTTPS uses SSL/TLS encryption to provide secure communication over the Internet, unlike HTTP which is unencrypted."
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
+      "incorrect_answers": [
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
+      "incorrect_answers": [
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
+      "incorrect_answers": [
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
+      "incorrect_answers": [
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
+      "incorrect_answers": [
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
+      "incorrect_answers": [
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
+      "incorrect_answers": [
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
+      "incorrect_answers": [
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
+      "incorrect_answers": [
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
+      "incorrect_answers": [
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
+      "incorrect_answers": [
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
+      "incorrect_answers": [
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
+      "incorrect_answers": [
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
+      "incorrect_answers": [
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
+      "incorrect_answers": [
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
+      "incorrect_answers": [
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
+      "incorrect_answers": [
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
+      "incorrect_answers": [
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
+      "incorrect_answers": [
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
+      "incorrect_answers": [
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
+      "incorrect_answers": [
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
+      "incorrect_answers": [
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
+      "incorrect_answers": [
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
+      "incorrect_answers": [
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
+      "incorrect_answers": [
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
+      "incorrect_answers": [
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
+      "incorrect_answers": [
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
+      "incorrect_answers": [
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
+      "incorrect_answers": [
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
+      "incorrect_answers": [
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
+      "incorrect_answers": [
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
+      "incorrect_answers": [
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
+      "incorrect_answers": [
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
+      "incorrect_answers": [
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
+      "incorrect_answers": [
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
+      "incorrect_answers": [
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
+      "incorrect_answers": [
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
+      "incorrect_answers": [
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
+      "incorrect_answers": [
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
+      "incorrect_answers": [
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
+      "incorrect_answers": [
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
+      "incorrect_answers": [
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
+      "incorrect_answers": [
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
+      "incorrect_answers": [
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
+      "incorrect_answers": [
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^1 dx ?",
+      "correct_answer": "x^2/2 + C",
+      "incorrect_answers": [
+        "x^1 + C",
+        "1x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^2 dx ?",
+      "correct_answer": "x^3/3 + C",
+      "incorrect_answers": [
+        "x^2 + C",
+        "2x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^3 dx ?",
+      "correct_answer": "x^4/4 + C",
+      "incorrect_answers": [
+        "x^3 + C",
+        "3x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
+    },
+    {
+      "type": "multiple",
+      "difficulty": "normal",
+      "category": "2025",
+      "question": "What is the value of \u222b x^4 dx ?",
+      "correct_answer": "x^5/5 + C",
+      "incorrect_answers": [
+        "x^4 + C",
+        "4x + C",
+        "ln x + C"
+      ],
+      "explanation": "Using power rule: \u222bx^n dx = x^(n+1)/(n+1) + C."
     }
   ]
 }
