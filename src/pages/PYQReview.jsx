@@ -1,13 +1,17 @@
 import { useLocation, useParams } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PYQNavigator from "../components/PYQNavigator";
 
+import quiz2022 from "../data/pyq/2022.json";
+import quiz2023 from "../data/pyq/2023.json";
+import quiz2024 from "../data/pyq/2024.json";
 import quiz2025 from "../data/pyq/2025.json";
-// import quiz2024 from "../data/pyq/2024.json";
 
 const QUIZ_MAP = {
+  2022: quiz2022,
+  2023: quiz2023,
+  2024: quiz2024,
   2025: quiz2025,
-  // 2024: quiz2024
 };
 
 function PYQReview() {
@@ -19,37 +23,95 @@ function PYQReview() {
   const [index, setIndex] = useState(0);
   const q = quiz[index];
 
-  let score = 0;
+  let correct = 0,
+    incorrect = 0;
   quiz.forEach((q, i) => {
-    if (answers[i] === q.correct_answer) score += 4;
-    else score -= 1;
+    if (answers[i] === q.answer) correct += 1;
+    else incorrect += 1;
   });
+
+  useEffect(() => {
+    function handleKeyDown(e) {
+      if (e.key === "ArrowRight") {
+        setIndex((prev) => Math.min(prev + 1, quiz.length - 1));
+      } else if (e.key === "ArrowLeft") {
+        setIndex((prev) => Math.max(prev - 1, 0));
+      }
+    }
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+    // eslint-disable-next-line
+  }, [index, quiz]);
 
   return (
     <div className="grid grid-cols-4 gap-4">
       {/* LEFT: Question Review */}
       <div className="col-span-3 border p-6 rounded-xl">
         <h1 className="text-2xl font-bold mb-4">
-          Score: {score} / {quiz.length}
+          Score: {correct * 4 - incorrect} / {quiz.length * 4} (
+          <span className="text-green-600">Correct: {correct}</span>,{" "}
+          <span className="text-red-600"> Incorrect: {incorrect}</span>)
         </h1>
 
-        <div className="font-bold text-lg">
-          Q{index + 1}. {q.question}
+        <div className="col-span-3 border p-6 rounded-xl">
+          <div className="text-xl font-bold mb-4">
+            Q{index + 1}.{" "}
+            {q.question.includes(".png") ? (
+              <img
+                src={require(`../data/${year}/${q.question}`)}
+                alt={`Question ${index + 1}`}
+                className="mx-auto max-h-[300px] object-contain"
+              />
+            ) : (
+              <span>{q.question}</span>
+            )}
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            {q.options.map((opt) => (
+              <button
+                key={opt}
+                className={`p-4 rounded-md text-white text-lg
+                ${
+                  opt === q.answer
+                    ? "bg-green-600"
+                    : answers[index] === opt && opt !== q.answer
+                      ? "bg-red-600"
+                      : "bg-indigo-700"
+                }
+              `}
+              >
+                {opt}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div
-          className={`mt-3 font-semibold ${
-            answers[index] === q.correct_answer
-              ? "text-green-600"
-              : "text-red-600"
-          }`}
+          className="mt-3 font-semibold text-red-600 text-center"
         >
-          Your Answer: {answers[index] || "Not Answered"}
+          {!answers[index] && "Unanswered"}
+        </div>
+        <div
+          className="mt-3 text-xl font-semibold"
+        >
+          Explanation :
         </div>
 
-        <div className="text-green-700">Correct Answer: {q.correct_answer}</div>
-
-        <div className="mt-3 italic">Explanation: {q.explanation}</div>
+        <div className="mt-3">
+          {Array.isArray(q.explanation) ? (
+            q.explanation.map((exp, i) => (
+              <img
+                key={i}
+                src={require(`../data/${year}/${exp}`)}
+                alt={`Explanation ${i + 1}`}
+                className="mx-auto object-contain"
+              />
+            ))
+          ) : (
+            <p>{q.explanation}</p>
+          )}
+        </div>
       </div>
 
       {/* RIGHT: Navigator */}

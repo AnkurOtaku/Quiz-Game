@@ -2,134 +2,739 @@
   "response_code": 0,
   "results": [
     {
+      "category": "2025",
       "type": "multiple",
       "difficulty": "normal",
-      "category": "2025",
-      "question": "Which data structure follows the First In First Out (FIFO) principle?",
-      "correct_answer": "Queue",
-      "incorrect_answers": [
-        "Stack",
-        "Tree",
-        "Graph"
-      ],
-      "explanation": "A queue follows the FIFO principle where the element inserted first is removed first. Stack follows LIFO, while trees and graphs do not enforce any such order."
+      "question": "1.png",
+      "answer": "10",
+      "options": ["3", "10", "4", "27"],
+      "explanation": ["1e.png"]
     },
     {
+      "category": "2025",
       "type": "multiple",
       "difficulty": "normal",
-      "category": "2025",
-      "question": "What is the time complexity of binary search in a sorted array?",
-      "correct_answer": "O(log n)",
-      "incorrect_answers": [
-        "O(n)",
-        "O(n log n)",
-        "O(1)"
-      ],
-      "explanation": "Binary search halves the search space at every step, resulting in a logarithmic time complexity O(log n)."
+      "question": "2.png",
+      "answer": "A & B",
+      "options": ["A & B", "B & A", "C & D", "D & C"],
+      "explanation": ["2e.png"]
     },
     {
+      "category": "2025",
       "type": "multiple",
       "difficulty": "normal",
-      "category": "2025",
-      "question": "Which normal form eliminates transitive dependency in a database table?",
-      "correct_answer": "Third Normal Form",
-      "incorrect_answers": [
-        "First Normal Form",
-        "Second Normal Form",
-        "Boyce-Codd Normal Form"
-      ],
-      "explanation": "Third Normal Form (3NF) removes transitive dependencies, ensuring that non-prime attributes depend only on the primary key."
+      "question": "3.png",
+      "answer": "Clank",
+      "options": ["Thunder", "Clinch", "Tinkle", "Clank"],
+      "explanation": ["3e.png"]
     },
     {
+      "category": "2025",
       "type": "multiple",
       "difficulty": "normal",
-      "category": "2025",
-      "question": "Which of the following is not an operating system?",
-      "correct_answer": "Oracle",
-      "incorrect_answers": [
-        "Linux",
-        "Windows",
-        "Unix"
-      ],
-      "explanation": "Oracle is a database management system, not an operating system. Linux, Windows, and Unix are operating systems."
+      "question": "4.png",
+      "answer": "KAANRAURNAAK",
+      "options": ["KAANRAURNAAK", "AKNUARRANKA", "NKKRANKRAUK", "RURNKAAUNAK"],
+      "explanation": ["4e.png"]
     },
     {
+      "category": "2025",
       "type": "multiple",
       "difficulty": "normal",
-      "category": "2025",
-      "question": "In computer networks, which device operates at the Network Layer of the OSI model?",
-      "correct_answer": "Router",
-      "incorrect_answers": [
-        "Hub",
-        "Switch",
-        "Repeater"
-      ],
-      "explanation": "Routers work at the Network Layer (Layer 3) and are responsible for routing packets between different networks."
+      "question": "5.png",
+      "answer": "44",
+      "options": ["36", "44", "48", "46"],
+      "explanation": ["5e.png"]
     },
     {
+      "category": "2025",
       "type": "multiple",
       "difficulty": "normal",
-      "category": "2025",
-      "question": "What will be the output of the expression: 5 + 10 * 2?",
-      "correct_answer": "25",
-      "incorrect_answers": [
-        "30",
-        "20",
-        "15"
-      ],
-      "explanation": "According to operator precedence, multiplication is performed before addition. So 10 * 2 = 20, then 5 + 20 = 25."
+      "question": "6.png",
+      "answer": "12",
+      "options": ["12", "16", "18", "20"],
+      "explanation": ["6e.png"]
     },
     {
+      "category": "2025",
       "type": "multiple",
       "difficulty": "normal",
-      "category": "2025",
-      "question": "Which traversal technique is used to get postfix expression from an expression tree?",
-      "correct_answer": "Postorder traversal",
-      "incorrect_answers": [
-        "Preorder traversal",
-        "Inorder traversal",
-        "Level order traversal"
-      ],
-      "explanation": "Postorder traversal processes the left subtree, right subtree, and then the root, which corresponds to postfix notation."
+      "question": "7.png",
+      "answer": "Sister",
+      "options": ["Mother", "Aunt", "Sister", "Daughter"],
+      "explanation": ["7e.png"]
     },
     {
+      "category": "2025",
       "type": "multiple",
       "difficulty": "normal",
-      "category": "2025",
-      "question": "Which scheduling algorithm may cause starvation?",
-      "correct_answer": "Priority Scheduling",
-      "incorrect_answers": [
-        "Round Robin",
-        "First Come First Serve",
-        "Shortest Job First (non-preemptive)"
-      ],
-      "explanation": "In priority scheduling, low-priority processes may starve if higher-priority processes keep arriving."
+      "question": "8.png",
+      "answer": "Violin",
+      "options": ["Trumpet", "Violin", "Harmonium", "Mridanga"],
+      "explanation": ["8e.png"]
     },
     {
+      "category": "2025",
       "type": "multiple",
       "difficulty": "normal",
-      "category": "2025",
-      "question": "What is the degree of a node in a graph?",
-      "correct_answer": "Number of edges connected to the node",
-      "incorrect_answers": [
-        "Number of vertices in the graph",
-        "Number of cycles in the graph",
-        "Number of paths from the node"
-      ],
-      "explanation": "The degree of a node is defined as the number of edges incident to that node."
+      "question": "9.png",
+      "answer": "4",
+      "options": ["1", "2", "3", "4"],
+      "explanation": [
+        "9e1.png",
+        "9e2.png",
+        "9e3.png",
+        "9e4.png"
+      ]
     },
     {
+      "category": "2025",
       "type": "multiple",
       "difficulty": "normal",
+      "question": "10.png",
+      "answer": "1707",
+      "options": ["1262", "1707", "4027", "4407"],
+      "explanation": ["10e.png"]
+    },
+    {
       "category": "2025",
-      "question": "Which protocol is used for secure communication over the Internet?",
-      "correct_answer": "HTTPS",
-      "incorrect_answers": [
-        "HTTP",
-        "FTP",
-        "SMTP"
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "11.png",
+      "answer": "22",
+      "options": ["38", "22", "21", "37"],
+      "explanation": ["11e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "12.png",
+      "answer": "Gel",
+      "options": ["Aerosol", "Suspension", "Sol", "Gel"],
+      "explanation": ["12e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "13.png",
+      "answer": "(A) ,(B) and (D) only",
+      "options": [
+        "(A) ,(B) and (D) only",
+        "(B),(C) and (D) only",
+        "(A), (B) and (C) only",
+        "(A),(C) and (D) only"
       ],
-      "explanation": "HTTPS uses SSL/TLS encryption to provide secure communication over the Internet, unlike HTTP which is unencrypted."
+      "explanation": ["13e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "14.png",
+      "answer": "U",
+      "options": ["R", "S", "U", "T"],
+      "explanation": ["14e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "15.png",
+      "answer": "|^0 v1|",
+      "options": ["|v0 ^1|", "|^0 v1|", "|v1 v0|", "| ^1v0|"],
+      "explanation": ["15e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "16.png",
+      "answer": "121",
+      "options": ["121", "120", "12", "24"],
+      "explanation": ["16e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "17.png",
+      "answer": "(A) - (IV), (B) - (III), (C) (II), (D) - (I)",
+      "options": [
+        "(A) - (IV), (B) - (III), (C) (II), (D) - (I)",
+        "(A) - (IV), (B) - (III), (C) - (D) - (II)",
+        "(A) (IV), (B) (l), (C) (II), (D) (III)",
+        "(A) - (IV), (B) - (II), (C) - (D) - (III)"
+      ],
+      "explanation": [
+        "17e1.png",
+        "17e2.png",
+        "17e3.png",
+        "17e4.png"
+      ]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "18.png",
+      "answer": "40",
+      "options": ["40", "80", "20", "240"],
+      "explanation": ["18e1.png", "18e2.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "19.png",
+      "answer": "4",
+      "options": ["1", "2", "3", "4"],
+      "explanation": ["19e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "20.png",
+      "answer": "7/8",
+      "options": ["1/2", "3/8", "1/8", "7/8"],
+      "explanation": ["20e1.png", "20e2.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "21.png",
+      "answer": "1",
+      "options": ["1", "2", "3", "4"],
+      "explanation": [
+        "21e1.png",
+        "21e2.png",
+        "21e3.png",
+        "21e4.png"
+      ]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "22.png",
+      "answer": "Arithmetic Progression",
+      "options": [
+        "Arithmetic Progression",
+        "Geometric Progression",
+        "2/y = 1/x + 1/z",
+        "x = y + z"
+      ],
+      "explanation": ["22e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "23.png",
+      "answer": "3",
+      "options": ["2", "5", "3", "4"],
+      "explanation": ["23e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "24.png",
+      "answer": "-4",
+      "options": ["-4", "4", "3^1/2", "2(3)^1/2"],
+      "explanation": ["24e1.png", "24e2.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "25.png",
+      "answer": "0",
+      "options": ["ab + bc + ca", "(ab + bc + ca)^2", "2(ab + bc + ca)", "0"],
+      "explanation": ["25e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "26.png",
+      "answer": "2",
+      "options": ["1", "2", "3", "4"],
+      "explanation": ["26e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "27.png",
+      "answer": "(-3,2) and 3",
+      "options": ["(2,3) and 3", "(3,2) and 8", "(2,-3) and 3", "(-3,2) and 3"],
+      "explanation": ["27e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "28.png",
+      "answer": "9",
+      "options": ["-7", "9", "7", "2"],
+      "explanation": ["28e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "29.png",
+      "answer": "A & D",
+      "options": ["A & D", "A & E", "B & D", "D"],
+      "explanation": ["29e1.png", "29e2.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "30.png",
+      "answer": "(A), (C) and (E) only",
+      "options": [
+        "(A) and (E) only",
+        "(B), (C) and (E) only",
+        "(A), (C) and (E) only",
+        "(B), (D) and (E) only"
+      ],
+      "explanation": ["30e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "31.png",
+      "answer": "e^2/3",
+      "options": ["e", "e^2", "e^2/3", "e^1/3"],
+      "explanation": ["31e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "32.png",
+      "answer": "continuous for all x E R",
+      "options": [
+        "continuous for all x E R",
+        "continuous at O, 1 only",
+        "not continuous at 1",
+        "not continuous at 0"
+      ],
+      "explanation": ["32e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "33.png",
+      "answer": "3",
+      "options": ["1", "2", "3", "4"],
+      "explanation": ["33e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "34.png",
+      "answer": "35/68",
+      "options": ["35/68", "7/38", "14/37", "34/43"],
+      "explanation": ["34e1.png", "34e2.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "35.png",
+      "answer": "3",
+      "options": ["1", "2", "3", "4"],
+      "explanation": ["35e1.png", "35e2.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "36.png",
+      "answer": "A only",
+      "options": ["A, B & D", "A, B & C", "A, B, C & D", "A only"],
+      "explanation": ["36e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "37.png",
+      "answer": "Deadlock",
+      "options": ["Pooling", "Deadlock", "Thrashing", " Paging"],
+      "explanation": ["37e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "38.png",
+      "answer": "When enough total memory space exists to satisfy a request, but it is not contiguous, storage is fragmented into a large number of small holes.",
+      "options": [
+        "When enough total memory space exists to satisfy a request, but it is not contiguous, storage is fragmented into a large number of small holes.",
+        "When enough total memory space exists to satisfy a request, which is contiguous, storage is fragmented into a large number of small holes.",
+        "When memory is empty.",
+        "Always"
+      ],
+      "explanation": ["38e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "Which disk scheduling algorithm looks for the track closest to the current head position?",
+      "answer": "SSTF",
+      "options": ["LOOK", "SSTF", "FCFS", "SCAN"],
+      "explanation": "The Shortest Seek Time First (SSTF) algorithm selects the request that is closest to the current head position. This is determined by the minimum seek time from the current head position to the next requested track. This approach aims to minimize the total head movement and is a form of elevator algorithm optimization."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "Which CPU scheduling algorithm prefers the process with the shortest burst time?",
+      "answer": "SJF",
+      "options": ["FCFS", "SJF", "Round Robin", "Priority Scheduling"],
+      "explanation": "The Shortest Job First (SJF) scheduling algorithm prioritizes the process that has the smallest CPU burst time among all the available processes. FCFS (First-Come, First-Served) schedules processes based on arrival time, Round Robin uses a time quantum for each process, and Priority Scheduling uses an assigned priority value."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "'The Dining Philosopher' problem can be solved by :",
+      "answer": "",
+      "options": [
+        "Use of semaphores",
+        "Use of overlays",
+        "Mutual exclusion",
+        "Bounded waiting"
+      ],
+      "explanation": "The Dining Philosophers problem is a classic example of a synchronization problem in computer science used to illustrate the challenges of resource allocation and deadlock. Semaphores, which are synchronization primitives, are commonly used to provide a solution by controlling access to the shared resources (the chopsticks) and preventing deadlock and starvation. Mutual exclusion is a condition that must be met to have a critical section, but it alone does not solve the deadlock issue inherent in the Dining Philosophers problem. Bounded waiting is a condition for a good solution to the critical section problem, ensuring that a process does not wait indefinitely, which can be achieved through specific semaphore implementations. Overlays are a memory management technique and not relevant to process synchronization problems."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "For a deadlock to occur, the four conditions namely Mutual Exclusion, Hold and wait, No preemption circular wait _______",
+      "answer": "Must hold simultaneously",
+      "options": [
+        "May or may not hold",
+        "The circular wait does not implies hold and wait condition",
+        "Are completely independent",
+        "Must hold simultaneously"
+      ],
+      "explanation": "For a deadlock to occur, all four conditions (Mutual Exclusion, Hold and wait, No preemption, and Circular wait) must be present at the same time. These conditions are also known as the Coffman conditions. The absence of any one of these conditions can prevent a deadlock."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "Which of the following is a way to recover from the deadlock which has already occurred?",
+      "answer": "Process termination",
+      "options": [
+        "Process termination",
+        "Non preemption of resources",
+        "Banker's algorithm",
+        "Circular wait"
+      ],
+      "explanation": "Deadlock recovery methods are implemented after a deadlock has occurred. Process termination involves aborting one or more processes to break the circular wait condition and free up resources. Non preemption of resources is a condition for deadlock to occur, not a recovery method. Banker's algorithm is a deadlock avoidance algorithm, used to prevent deadlocks from occurring in the first place, not to recover from them. Circular wait is one of the four necessary conditions for a deadlock to occur, not a solution or recovery method."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "Details of a paging system for memory management are as follows: Logical address space : 32 KB Page Size: 4 KB Physical Memory size : 64 KB The number of pages in the logical address space and number of page frames in physical memory, respectively, are:",
+      "answer": "8,16",
+      "options": ["4,16","4,12","8,16","3,16"],
+      "explanation": ["44e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "Consider a page reference string as : 7, O, 1, 2, O, 3, O, 4, 2, 3, O, 3, 2. Assume that there are 3-page frames available. Calculate the total number of page faults for the above reference string if LRU policy is used for page replacement.",
+      "answer": "8",
+      "options": ["10", "8", "9", "11"],
+      "explanation": ["45e1.png", "45e2.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "46.png",
+      "answer": "1",
+      "options": ["1", "2", "3", "4"],
+      "explanation": "(A) FCFS (First-Come, First-Served) is a non-preemptive scheduling algorithm where processes are executed in the order they arrive. It often leads to a long average waiting time, especially if a long process arrives first. \n(B) Round Robin is a preemptive version of FCFS. Each process is given a small unit of CPU time (time quantum). If the process is still running after this time, it is preempted and added to the end of the ready queue. This matches \"FCFS + preemption\". \n(C) Multi-level queue scheduling classifies processes into different queues (e.g., foreground and background) based on their properties. Processes are permanently assigned to one queue upon arrival and do not move between queues.\n(D) Multi-level Feedback Queue is a more flexible approach that allows processes to move between different queues based on their CPU burst characteristics. This prevents starvation and allows the system to adapt to different process types"
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "47.png",
+      "answer": "4",
+      "options": ["1", "2", "3", "4"],
+      "explanation": "The correct matches are: \n(A) Seek Time is the time taken for the disk arm to move the heads to the cylinder containing the desired sector (IV).\n(B) Access Time is the sum of Seek Time and Rotational Latency (III).\n(C) Rotational Latency is the time taken for the disk to rotate the desired sector to the disk head (II).\n(D) Disk Bandwidth is the total number of bytes transferred, divided by the total time between the first request for service and the completion of the last transfer (I)."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "48.png",
+      "answer": "3",
+      "options": ["1", "2", "3", "4"],
+      "explanation": "Answer: 3. (C), (A), (D), (B)\nThe general structure of a process in the critical section problem involves a specific sequence of sections to ensure proper synchronization and mutual exclusion. The correct order is:\nEntry section (C): This is where a process requests permission to enter its critical section. It might involve waiting or acquiring a lock.\nCritical section (A): This is where the process is allowed to execute and access shared resources.\nExit section (D): This follows the critical section and is where the process releases the resources or permissions it was using, allowing other processes to enter their critical sections.\nRemainder section (B): This is the remaining code of the process that is not related to the critical section and does not involve shared resources."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "49.png",
+      "answer": "1",
+      "options": ["1", "2", "3", "4"],
+      "explanation": "Answer: 1. (A), (C), (B), (D)\nThe layers of the MS-DOS operating system, arranged from the innermost layer (closest to the hardware) to the outermost layer (closest to the user), are as follows:\n(A) ROM BIOS Device drivers: This is the innermost layer, directly interfacing with the hardware.\n(C) MS DOS Device Drivers: These are loaded after the BIOS and provide an interface to specific devices.\n(B) Resident System Program (Command Interpreter): This layer provides the user interface and manages basic system functions.\n(D) Application Program: This is the outermost layer, where user applications run and interact with the layers beneath them."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "Which of the following is not an application of DFS?",
+      "answer": "Finding minimum distance to a node in an unweighted graph optimally",
+      "options": ["Topological Sort", "Determining Strongly Connected Components in a graph", "Finding minimum distance to a node in an unweighted graph optimally", "Solving Maze Problem"],
+      "explanation": "Answer: 3. Finding minimum distance to a node in an unweighted graph optimally\nFinding the minimum distance to a node in an unweighted graph is typically done using Breadth-First Search (BFS), which guarantees finding the shortest path in terms of the number of edges. Depth-First Search (DFS) explores as far as possible along each branch before backtracking, so it does not guarantee finding the minimum distance optimally. The other options listed (Topological Sort, Determining Strongly Connected Components, and Solving Maze Problem) are all common applications of DFS."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "51.png",
+      "answer": "1",
+      "options": ["1", "2", "3", "4"],
+      "explanation": "Answer: 1. (A) - (IV), (B) - (I), (C) - (III), (D) - (II)\nThe following data structures are typically used with the corresponding algorithms or applications:\n(A). BFS (Breadth-First Search) uses a Queue to explore nodes level by level.\n(B). DFS (Depth-First Search) uses a Stack to explore as far as possible along each branch before backtracking.\n(C). Heap sort is a comparison-based sorting algorithm that uses a binary Priority Queue (specifically, a max heap or min heap) data structure to sort elements.\n(D). Storage on secondary storage devices often uses B Trees or their variants (like B+ trees) because they are optimized for disk access, minimizing the number of disk reads/writes required to locate data."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "In a binary search tree, the worst case time complexity of inserting and deleting a key is :",
+      "answer": "",
+      "options": ["O(lg n) for insertion and O(lg n) for deletion", "O(n) for insertion and O(lg n) for deletion", "O(n) for insertion and O(n) for deletion", "O(lg n) for insertion and O(n) for deletion"],
+      "explanation": "Answer: 3. O(n) for insertion and O(n) for deletion is O(log n).\nIn a binary search tree (BST), the average time complexity for insertion and deletion is O(log n). However, in the worst case, the tree can become skewed, resembling a linked list. In such a scenario, searching for the correct position to insert or delete a node requires traversing all n nodes, resulting in a time complexity of O(n) for both operations. "
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "53.png",
+      "answer": "1",
+      "options": ["1", "2", "3", "4"],
+      "explanation": ["53e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "Arrange the following time complexities in increasing order.\n(A). Bubble sort (worst case)\n(B). Deleting head node in singly linked list\n(C). Binary search\n(D). Worst case of merge sort\nChoose the correct answer from the options given below:",
+      "answer": "",
+      "options": ["ABCD", "BCDA", "BADC", "CBDA"],
+      "explanation": "Arrange the following time complexities in increasing order.\nAnswer: 2. (B), (C), (D), (A)\nThe time complexities for each operation are as follows:    (B) Deleting head node in singly linked list: O(1) (constant time) (C) Binary search: O(log n) (logarithmic time) (D) Worst case of merge sort: O(n log n) (linearithmic time) (A) Bubble sort (worst case): O(n^2) (quadratic time)\nArranged in increasing order of time complexity, from most efficient to least efficient, the sequence is (B), (C), (D), (A)."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "Which of the following statements are TRUE, where |E| represents the number of edges.\n(A). In case of a directed graph , the sum of lengths of all the adjacency list is |E|\n(B). For an undirected graph, the sum of the lengths of all the adjacency list is 2|E|\n(C). For a dense graph, adjacency matrix representation is preferable\n(D). The memory requirement of the adjacency matrix of a graph is dependent on the number of edges\nChoose the correct answer from the options given below:",
+      "answer": "ABC",
+      "options": ["ABD", "ABC", "ABCD", "BCD"],
+      "explanation": ["55e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "In ________ the search time is independent of the number of elements n.",
+      "answer": "",
+      "options": ["Binary Search","Hashing","Linear Search","Jump search"],
+      "explanation": "Answer: (2) Hashing\nHashing has an average time complexity of O(1), which means that the time taken for a search operation is constant and does not depend on the number of elements n in the data structure."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "Consider the task of finding the shortest path in an unweighted graph by using BFS and DFS.\nWhich of the following statements are true?\n(A). BFS always finds the shortest path.\n(B). DFS always finds the shortest path.\n(C). DFS does not guarantee finding the shortest path.\n(D). BFS does not guarantee finding the shortest path.\nChoose the correct answer from the options given below:",
+      "answer": "AC",
+      "options": ["BD", "AC", "AB", "CD"],
+      "explanation": "Answer: 2. (A) and (C) only\n A). BFS always finds the shortest path: This statement is true. In an unweighted graph, Breadth-First Search (BFS) explores all neighbors at the current depth level before moving to the next level. This guarantees that the first time a destination node is reached, it is via the path with the minimum number of edges (shortest path). B). DFS always finds the shortest path: This statement is false. Depth-First Search (DFS) explores as far as possible along one branch before backtracking. It might find a path to the destination, but this path could be significantly longer than the shortest possible path, depending on the graph's structure. C). DFS does not guarantee finding the shortest path: This statement is true, for the reasons explained above for statement (B). D). BFS does not guarantee finding the shortest path: This statement is false, as BFS is specifically designed to find the shortest path in unweighted graphs.\nTherefore, the only true statements are (A) and (C)."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "In case of Binary search tree which of the following procedure's running time is distinct among all",
+      "answer": "INORDER- WALK (prints all elements of a tree in inorder manner)",
+      "options": ["TREE-SUCCESSOR (finds successor of the given node)", "TREE-MAXIMUM (finds the node with maximum value)", "INORDER- WALK (prints all elements of a tree in inorder manner)", "TREE-MINIMUM (finds the node with minimum value)"],
+      "explanation": "Answer: 3. INORDER- WALK\n Explanation\nTREE-SUCCESSOR, TREE-MAXIMUM, and TREE-MINIMUM all have a running time complexity proportional to the height of the tree, which is typically O(h) or in the worst case O(n), where n is the number of nodes.\n INORDER- WALK visits every single node in the tree exactly once to print all elements. Therefore, its running time complexity is O(n), where n is the total number of nodes in the tree.\n The running time of INORDER- WALK is distinct because it is dependent on the total number of elements, while the others are dependent on the height of the tree."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "All the elements that hash to the same slot are placed into the same linked list in :",
+      "answer": "Chaining",
+      "options": ["Universal hashing","Linear Probing","Quadratic probing","Chaining"],
+      "explanation": "Answer: (4) Chaining\nIn the chaining method of collision resolution in hash tables, when multiple keys hash to the same index (slot), they are stored in a linked list associated with that slot. This approach effectively manages collisions by allowing multiple entries at a single location in the hash table."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "The Quicksort and randomized Quicksort procedures differ in :",
+      "answer": "Selection of Pivot element",
+      "options": ["Selection of Pivot element","Worst case time complexity","Best case time Complexity","Final Output"],
+      "explanation": "Answer: 1. Selection of Pivot element\nQuicksort and randomized Quicksort procedures both aim to sort data, so their final output (a sorted list) and best-case time complexity O(n log n) are the same. Their fundamental difference lies in how they select the pivot element:\nStandard Quicksort typically uses a fixed strategy, like always choosing the first or last element as the pivot. This deterministic approach leads to a predictable worst-case time complexity of O(n^2) for already sorted or reverse-sorted input. \nRandomized Quicksort selects the pivot randomly from the array elements. This makes the worst-case scenario highly unlikely in practice, as the input order no longer consistently triggers the worst-case pivot selection. While the worst-case complexity technically remains O(n^2), the expected time complexity across all inputs is O(n log n), making it more robust in general applications."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "The statements of pseudocode for searching the first element with key k in the linked list L are given below. Arrange them in the correct order.\n(A) while (x!=NiL and x.key != k)\n(B) x=L.head\n(C) x=x.next\n(D) return x\nChoose the correct answer from the options given below:",
+      "answer": "BACD",
+      "options": ["BACD", "ABCD", "CBAD", "BCAD"],
+      "explanation": "Answer: 1. (B), (A), (C), (D)\nThe correct order for the pseudocode is as follows:\n(B) x=L.head : The search starts by initializing a pointer, x, to the head of the linked list L.\n (A) while (x!=NiL and x.key != k): This is the loop condition. The loop continues as long as the current pointer x is not NIL (meaning we haven't reached the end of the list) and the key of the current node is not the target key k.\n(C) x=x.next: Inside the loop, if the condition in (A) is true, the pointer x moves to the next node in the list."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "Given the index i of a node in a heap, we can not compute :",
+      "answer": "Heap size",
+      "options": ["Parent (i)", "Heap size", "Left (i)", "Right (i)"],
+      "explanation": ["62e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "63.png",
+      "answer": "Q'S' + P'S'",
+      "options": ["Q'S + P'Q", "Q'S' + P'S'", "P'Q' + P'S' + Q'S'", "PQ + Q'S' + P'S'"],
+      "explanation": ["63e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "Consider the following type of memories.\n(A). Hard Disk Drive (HDD)\n(B). Cache Memory\n(C). Random Access Memory (RAM)\n(D). Registers\nArrange the above memories according to their access speed (from fastest to slowest)",
+      "answer": "DBCA",
+      "options": ["DCBA", "ACBD", "BDCA", "DBCA"],
+      "explanation": "Answer: 4. (D), (B), (C), (A)\nThe access speed of computer memory is typically ranked by its proximity to the CPU and its technology. Registers are part of the CPU itself and are the fastest. Cache memory is a small, fast memory buffer on or near the CPU. RAM is the main system memory, which is much larger but slower than cache. The Hard Disk Drive (HDD) is secondary storage, which is the slowest of these options. \nThe order from fastest to slowest access speed is:\n(D) Registers: Fastest, part of the CPU.\n(B) Cache Memory: Very fast, on or near the CPU.\n(C) Random Access Memory (RAM): Fast, but slower than cache.\n(A) Hard Disk Drive (HDD): Slowest, secondary storage."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "65.png",
+      "answer": "1",
+      "options": ["1", "2", "3", "4"],
+      "explanation": ["65e1.png", "65e2.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "Arrange the following steps in the correct order to understand the functioning of a 3 to 8 line decoder.\n(A). The encoder enable input is set to 1.\n(B). The decoder activates one of its 8 output lines based on the input code.\n(C). The input binary code is applied to the decoder.\n(D). The decoder converts the 3-bit binary input into 8 possible outputs.\nChoose the correct answer from the options given below:",
+      "answer": "",
+      "options": ["ABCD", "ADCB", "ACDB", "ABDC"],
+      "explanation": "Answer: 3. (A), (C), (D), (B)\nExplanation\nTo understand the functioning of a 3 to 8 line decoder, the steps must follow a logical sequence:\n(A) The decoder enable input is set to 1: The enable input must be activated first for the decoder to operate. If the enable is 0, the decoder is inactive regardless of other inputs.\n(C) The input binary code is applied to the decoder: Once the decoder is enabled, the specific 3-bit binary input (the address) is provided.\n(D) The decoder converts the 3-bit binary input into 8 possible outputs: The core function of the decoder is to interpret the applied 3-bit input code.\n(B) The decoder activates one of its 8 output lines based on the input code: As a result of the conversion, the specific output line corresponding to the input code is activated."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "67.png",
+      "answer": "2p+1",
+      "options": ["2p", "2p+1", "2p-1", "2^p-2"],
+      "explanation": ["67e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "Consider the following statements.\n(A). Combinational logic circuits do not have memory, while sequential logic circuits have memory elements.\n(B). Sequential logic circuits depend only on the current inputs,while combinational logic circuits depend on both\ncurrent and past inputs.\n(C). Flip-flops and latches are examples of combinational logic circuits.\n(D). Multiplexer is an example of combinational logic circuit.\nChoose the correct statement/statements from the options given below:",
+      "answer": "A & D",
+      "options": ["A & D", "A, B & D", "A, B, C & D", "B, C & D"],
+      "explanation": "Answer: 1. (A) and (D) only\nStatement (A) is correct. Combinational logic circuits produce outputs based solely on their current inputs and do not have memory elements. Sequential logic circuits, conversely, use memory elements (like flip-flops) to store past states, meaning their output depends on both current inputs and previous inputs (state).\nStatement (B) is incorrect. Sequential circuits depend on both current and past inputs, while combinational circuits depend only on current inputs.\nStatement (C) is incorrect. Flip-flops and latches are fundamental building blocks of sequential logic circuits, not combinational ones.\nStatement (D) is correct. A multiplexer is a combinational logic circuit that selects one of several input lines and routes it to a single output line, based on a set of selection inputs."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "69.png",
+      "answer": "1",
+      "options": ["1", "2", "3", "4"],
+      "explanation": "Answer: (A) - (IV), (B) - (III), (C) - (II), (D) - (I)\nThe correct mapping for the JK Flip-Flop inputs to their next states is as follows:\n(A). When J=0 and K=0, the flip-flop maintains its current state, which is \"No Change\" (IV).\n(B). When J=0 and K=1, the flip-flop output goes to 0 (or resets), which is \"Reset\" (III).\n(C). When J=1 and K=0, the flip-flop output goes to 1 (or sets), which is \"Set\" (II).\n(D). When J=1 and K=1, the flip-flop output changes to the opposite of its current state, which is \"Toggle\" (I)."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "What is the result of the following operation defined by IEEE754.\n(NaN == NaN)",
+      "answer": "false",
+      "options": ["false", "true", "error", "1"],
+      "explanation": "Answer: (1) false\nAccording to the IEEE 754 standard for floating-point arithmetic, any comparison operation involving a NaN (Not a Number) value with any other value, including another NaN, must return false. This is because NaN represents an indeterminate or unrepresentable value, and thus cannot be considered equal to any other value, including itself."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "Which of the following statement is true about IEEE754 representation of +0 and -0?",
+      "answer": "differ only in the sign bit; their exponent and mantissa bits are identical.",
+      "options": ["have the same sign bit, but different mantissa bits.", "differ only in the sign bit; their exponent and mantissa bits are identical.", "have the same representation because they are mathematically equivalent.", "differ in both their exponent and mantissa bits."],
+      "explanation": "Answer: (2) differ only in the sign bit; their exponent and mantissa bits are identical.\nThe IEEE 754 standard for floating-point arithmetic uses a sign-magnitude representation, which allows for both a positive zero (+0) and a negative zero (-0). \nPositive Zero (+0): The sign bit is 0, and all exponent and mantissa bits are 0.\nNegative Zero (-0): The sign bit is 1, and all exponent and mantissa bits are 0.\nTherefore, the only difference between the representations of +0 and -0 is the value of the sign bit. They are mathematically equivalent but have distinct bit patterns"
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "Minimum number of 2:1 Multiplexers required to design a 16:1 Multiplexer is?",
+      "answer": "15",
+      "options": ["12", "14", "15", "16"],
+      "explanation": "Answer: 3. 15\n The number of 2:1 multiplexers required to build a larger N:1 multiplexer can be calculated using the formula N-1.\n In this case, to design a 16:1 multiplexer, you need 16-1=15 2:1 multiplexers. These are typically arranged in a tree structure across multiple levels."
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "What should be the output of the following boolean expression after simplifying it to a minimum number of variables?\na'b'+ab+a'b",
+      "answer": "a'+b",
+      "options": ["a+b'","a'+b","a'+b'","a+b"],
+      "explanation": ["73e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "To provide a memory capacity of 32K X 16 how many address lines and data lines are required?",
+      "answer": "",
+      "options": ["address lines—14 , data lines—16","address lines=15, data lines=16","address lines=14, data lines=4","address lines=15, data lines=4"],
+      "explanation": ["74e.png"]
+    },
+    {
+      "category": "2025",
+      "type": "multiple",
+      "difficulty": "normal",
+      "question": "75.png",
+      "answer": "XNOR GATE",
+      "options": ["XOR GATE","XNOR GATE","NAND GATE","NOR GATE"],
+      "explanation": ["75e.png"]
     }
   ]
 }

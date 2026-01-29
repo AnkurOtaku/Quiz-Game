@@ -19,11 +19,11 @@ function PYQNavigator({
         if (
           mode === "review" &&
           quiz[i] &&
-          quiz[i].correct_answer
+          quiz[i].answer
         ) {
           if (answers[i]) {
             color =
-              answers[i] === quiz[i].correct_answer
+              answers[i] === quiz[i].answer
                 ? "bg-green-600"
                 : "bg-red-600";
           }
