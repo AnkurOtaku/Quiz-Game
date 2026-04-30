@@ -11,11 +11,11 @@ import "./index.css";
 import CategoryMarathon from "./modes/CategoryMarathon";
 import RandomQuiz from "./modes/RandomQuiz";
 import TimeAttack from "./modes/TimeAttack";
-import PYQ from "./pages/PYQ";
-import PYQExam from "./pages/PYQExam";
-import PYQReview from "./pages/PYQReview";
+import Quiz from "./modes/Quiz.jsx";
+import QuizReview from "./modes/QuizReview.jsx";
 import Favourates from "./modes/Favourates";
 import Navbar from "./components/Navbar";
+import CreateQuiz from "./modes/CreateQuiz.jsx";
 import Error from "./components/Error.jsx";
 import RouteError from "./components/RouteError.jsx";
 import { AppProvider } from "./store/store.js";
@@ -29,9 +29,9 @@ const router = createBrowserRouter(
         <Route path="time_attack" element={<TimeAttack />} />
         <Route path="random_quiz" element={<RandomQuiz />} />
         <Route path="favourates" element={<Favourates />} />
-        <Route path="pyq" element={<PYQ />} />
-        <Route path="pyq/:year" element={<PYQExam />} />
-        <Route path="pyq/:year/review" element={<PYQReview />} />
+        <Route path="quiz" element={<Quiz />} />
+        <Route path="quiz/review" element={<QuizReview />} />
+        <Route path="create_quiz" element={<CreateQuiz/>} />
         <Route path="test_luck" element={<TestLuck/>}/>
         <Route path="error" element={<Error/>}/>
         <Route path="*" element={<RouteError/>}/>

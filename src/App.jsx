@@ -2,12 +2,13 @@ import { useContext } from "react";
 import { AppContext } from "./store/store";
 import { NavLink  } from "react-router-dom";
 
+// images
 import category_marathon from "./media/category_marathon.jpg";
 import time_attack from "./media/time_attack.jpg";
 import random_quiz from "./media/random_quiz.jpg";
 import favourates from "./media/favourates.jpg";
 import luck_test from "./media/luck_test.jpg";
-import pyq_image from "./media/pyq_image.png"; //download this from net
+import create_quiz from "./media/create_quiz.jpg";
 
 
 const getToken = async (setToken, setError) => {
@@ -35,7 +36,7 @@ function App() {
     { name: "Time Attack", route: "time_attack", image: time_attack },
     { name: "Random Quiz", route: "random_quiz", image: random_quiz },
     { name: "Favourates", route: "favourates", image: favourates },
-    { name: "PYQ", route: "pyq", image: pyq_image },
+    { name: "Create Your Quiz", route: "create_quiz", image: create_quiz },
   ];
 
   function handleToken() {

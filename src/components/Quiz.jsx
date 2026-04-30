@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import { useEffect, useState, useContext } from "react";
 import Results from "./Results";
 import { AppContext } from "../store/store";
 import stopwatch from "../media/stopwatch.png";
